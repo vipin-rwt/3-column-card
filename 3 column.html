@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      box-sizing:content-box;
+      padding:0.4rem;
+      padding-top:2rem;
+      padding-right:0.4rem;
+      padding-bottom:.4rem;
+      text-align:left;
+    }
+
+   article{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+   }
+
+   section{
+    padding:2rem;
+    display: flex;
+    flex-direction:column;
+   }
+   
+   h1{ 
+    text-align:left;
+  color:white; 
+    font-style: verdana,sans-serif;
+    text-transform:uppercase;
+    font-size:1.5em;
+    font-weight:700; 
+   }
+   
+   p{
+    color: white;
+   }
+   
+   .sedan{
+     background-color: hsl(31, 77%, 52%);
+
+   }
+
+   .suv{
+    background-color: hsl(184, 100%, 22%);
+   }
+.luxury{
+background-color: hsl(179, 100%, 13%);
+
+}
+
+
+button{
+  width: 61%;
+  height:2.5rem;
+  border-radius:50px;
+  border:1px transparent; 
+  margin-top: 1.1rem;
+}
+
+ button:hover{
+  background-color:transparent;
+  border:1px solid white;
+  border-radius:50px;
+}
+button:hover>span{
+  color:white;
+}
+
+@media(min-width:500px){
+ article{
+  display:flex;
+  flex-direction: row;
+ }
+
+ button{
+  margin-top:40%;
+ }
+
+ button:hover{
+  background-color:transparent;
+  border:1px solid white;
+  border-radius:50px;
+}
+button:hover>span{
+  color:white;
+}
+
+}
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <article>
+
+  <section class="sedan">
+    <img src="./images/icon-sedans.svg" width="60px;">
+    
+  <h1>Sedans</h1>
+  <p>
+  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.
+</p>
+<button type="button"><span>Learn More</span></button>
+  </section>
+   <section class="suv">
+  
+      <img src="./images/icon-suvs.svg" width="60px;">
+  <h1>SUVs</h1>
+  <p>  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+  and off-road adventures.
+</p>
+<button type="button"><span>Learn More</span></button>
+</section>
+   <section class="luxury">
+    <img src="/images/icon-luxury.svg" width="60px;">
+    
+ <h1>Luxury</h1>
+ <p>
+  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+  rental and arrive in style.
+</p>
+<button type="button"><span>Learn More</span></button>
+  </section>
+</article>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Vipin rawat</a>.
+  </div>
+</body>
+</html>
